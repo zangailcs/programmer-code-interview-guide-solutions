@@ -25,10 +25,12 @@ public class MainOfCD5 {
 class MyStack1 {
     private Stack<Integer> stackData;
     private Stack<Integer> stackMin;
+
     public MyStack1() {
         this.stackData = new Stack<>();
         this.stackMin = new Stack<>();
     }
+
     public void push(int newNum) {
         if (this.stackMin.isEmpty()) {
             this.stackMin.push(newNum);
@@ -37,6 +39,7 @@ class MyStack1 {
         }
         this.stackData.push(newNum);
     }
+
     public int pop() {
         if (this.stackData.isEmpty()) {
             throw new RuntimeException("Your stack is empty.");
@@ -47,6 +50,7 @@ class MyStack1 {
         }
         return value;
     }
+
     public int getmin() {
         if (this.stackMin.isEmpty()) {
             throw new RuntimeException("Your stack is empty.");
@@ -58,10 +62,12 @@ class MyStack1 {
 class MyStack2 {
     private Stack<Integer> stackData;
     private Stack<Integer> stackMin;
+
     public MyStack2() {
         this.stackData = new Stack<>();
         this.stackMin = new Stack<>();
     }
+
     public void push(int newNum) {
         if (this.stackMin.isEmpty()) {
             this.stackMin.push(newNum);
@@ -73,6 +79,7 @@ class MyStack2 {
         }
         this.stackData.push(newNum);
     }
+
     public int pop() {
         if (this.stackData.isEmpty()) {
             throw new RuntimeException("Your stack is empty.");
@@ -80,6 +87,7 @@ class MyStack2 {
         this.stackMin.pop();
         return this.stackData.pop();
     }
+
     public int getmin() {
         if (this.stackMin.isEmpty()) {
             throw new RuntimeException("Your stack is empty.");
