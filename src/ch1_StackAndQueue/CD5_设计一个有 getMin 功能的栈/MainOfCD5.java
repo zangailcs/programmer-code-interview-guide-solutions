@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 
-public class Main {
+public class MainOfCD5 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         MyStack1 myStack = new MyStack1();
